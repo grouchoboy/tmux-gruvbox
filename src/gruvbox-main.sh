@@ -24,9 +24,9 @@ readonly DEFAULT_THEME="dark256"
 readonly DEFAULT_STATUSBAR_ALPHA='false'
 # defaults for theme option (with color interpolation)
 readonly DEFAULT_LEFT_STATUS_A='#S'
-readonly DEFAULT_RIGHT_STATUS_X='%Y-%m-%d'
-readonly DEFAULT_RIGHT_STATUS_Y='%H:%M'
-readonly DEFAULT_RIGHT_STATUS_Z='#h'
+readonly DEFAULT_RIGHT_STATUS_X=''
+readonly DEFAULT_RIGHT_STATUS_Y=''
+readonly DEFAULT_RIGHT_STATUS_Z=''
 
 main() {
   TMUX_CMDS=() # clear
