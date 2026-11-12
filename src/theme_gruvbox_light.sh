@@ -59,8 +59,8 @@ theme_set_light() {
 
   tmux_append_seto "status-left" "#[bg=${col_bg3},fg=${col_fg3}] ${_left_status_a} #[bg=${col_bg1},fg=${col_bg3},nobold,noitalics,nounderscore]"
 
-  # right status
-  tmux_append_seto "status-right"
+  # right status: tmux server hostname
+  tmux_append_seto "status-right" "#[bg=${col_bg3},fg=${col_fg3}] #H "
   #
   # current window
   local _current_window_status_format_bg=${col_bg1}

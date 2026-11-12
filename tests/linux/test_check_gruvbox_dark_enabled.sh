@@ -39,6 +39,13 @@ EOF
     helper_teardown
     exit 1
   fi
+  _status_right_expected="#[bg=#665c54,fg=#bdae93] #H "
+  _status_right_current=$(helper_tmux_get_statusright)
+  if [[ "$_status_right_current" != "$_status_right_expected" ]]; then
+    helper_print_fail "status-right did not match" "$_status_right_current" "$_status_right_expected"
+    helper_teardown
+    exit 1
+  fi
   # check if status is not transparent
   _status_style_expected="bg=#3c3836,fg=#ebdbb2"
   _status_style_current=$(helper_tmux_get_statusstyle)

@@ -123,6 +123,8 @@ set -g @tmux-gruvbox-statusbar-alpha 'true'
 set -g @tmux-gruvbox-left-status-a '#S' # tmux's session name
 ```
 
+The right side of the status line shows the tmux server's hostname (`#H`).
+
 ## Development
 
 To run project locally:

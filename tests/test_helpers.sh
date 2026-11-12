@@ -65,3 +65,10 @@ helper_tmux_get_statusleft() {
   _val=$(tmux show-option -gqv status-left)
   echo "$_val"
 }
+
+# return the value of tmux status-right
+helper_tmux_get_statusright() {
+  local _val
+  _val=$(tmux show-option -gqv status-right)
+  echo "$_val"
+}
